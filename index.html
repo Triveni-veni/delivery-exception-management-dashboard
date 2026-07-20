@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Exception Management Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Delivery Exception Management Dashboard</h1>
+    <form id="deliveryForm">
+
+    <label for="deliveryId">Delivery ID</label><br>
+    <input type="text" id="deliveryId" placeholder="Enter Delivery ID"><br><br>
+
+    <label for="customerName">Customer Name</label><br>
+    <input type="text" id="customerName" placeholder="Enter Customer Name"><br><br>
+
+    <label for="issueType">Issue Type</label><br>
+    <select id="issueType">
+        <option>Select Issue</option>
+        <option>Address Not Found</option>
+        <option>Customer Not Available</option>
+        <option>Payment Issue</option>
+        <option>Package Damaged</option>
+    </select><br><br>
+
+    <label>Priority</label><br>
+
+    <input type="radio" name="priority"> Low
+    <input type="radio" name="priority"> Medium
+    <input type="radio" name="priority"> High
+
+    <br><br>
+
+    <label>Notes</label><br>
+    <textarea rows="4" cols="40"></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+<hr>
+
+<h2>Exceptions Dashboard</h2>
+
+<table border="1" width="100%" id="exceptionTable">
+
+    <thead>
+        <tr>
+            <th>Delivery ID</th>
+            <th>Customer Name</th>
+            <th>Issue Type</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+
+</table>
+
+ 
+    <script src="'script.js"></script>
+    
+</body>
+</html>
